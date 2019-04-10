@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.ActivityCrimeInfo">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="725dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/uiToolbar"
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:onClick="ButtonHome"
+                app:srcCompat="@drawable/ic_baseline_home_24px" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="229dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+            <ImageButton
+                android:id="@+id/uiButtonDeleteFromDB"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:onClick="ButtonDeleteCrimeFromDB"
+                app:srcCompat="@drawable/ic_baseline_delete_24px" />
+
+            <ImageButton
+                android:id="@+id/uiButtonSaveToDB"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:onClick="SaveCrimeToDB"
+                app:srcCompat="@drawable/ic_baseline_save_24px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uiLinearLayout"
+            android:layout_width="399dp"
+            android:layout_height="654dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uiTextViewCrimeInfoTitle"
+                        android:layout_width="240dp"
+                        android:layout_height="42dp"
+                        android:fontFamily="monospace"
+                        android:text="Crime Info"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Category"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewLocationType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Location Type"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewOutcomeStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Outcome Status"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Month"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewLocationTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="monospace"
+                        android:text="Location"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewStreetName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Street Name"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewStreetID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Street ID"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewLat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Latitude"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/uiTextViewLng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Longitude"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/uiMapView"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="326dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
