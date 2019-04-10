@@ -19,6 +19,20 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 * **Specific Crime Info**, displays all information and location based on a specific crime from the crimes list. 
 * **Save Specific Crime**, this saves the current specific crime to the local SQLite Database (phone memory) which allows storing of crimes to allow persistent data throughout instances of the app.
 
+<table style="width:100%">
+  <tr>
+    <td>
+      <img src="app_listview.jpg" width="250" title="A simple search request.">
+    </td>
+    <td>
+      <img src="app_mapview.jpg" width="250" title="A simple search request.">
+    </td>
+        <td>
+      <img src="app_crimeview.jpg" width="250" title="A simple search request.">
+    </td>
+  </tr>
+  </table>
+
 
 ###### Menu Features
 * **Saved Crimes**, using a SQLite database, you can save specific crimes to be viewed at a later date, as mentioned previously this will remain persistent throughout all instances of the app. View all saved crimes (SQLite Database).
