@@ -12,11 +12,13 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 * **Query Locations**, the app allows you to enter a UK based location: "folkestone", "hythe" etc. Using the Google GEOCoding API it will find a best matched location.
 * **Query Month**, you can query a location for a single month of a certain year. Extended date ranges will be added soon, see Future Implementations for more information on this.
 * **Query Crime Categories**, if desired, you can query a specific crime category, or all categories at the same time.
+<img src="app_nav_search.jpg" width="250" title="A simple search request.">
 
 ###### Specific Crime Features
 * **List/Map View**, toggle between a list or map representation of your crime query.
 * **Specific Crime Info**, displays all information and location based on a specific crime from the crimes list. 
 * **Save Specific Crime**, this saves the current specific crime to the local SQLite Database (phone memory) which allows storing of crimes to allow persistent data throughout instances of the app.
+
 
 ###### Menu Features
 * **Saved Crimes**, using a SQLite database, you can save specific crimes to be viewed at a later date, as mentioned previously this will remain persistent throughout all instances of the app. View all saved crimes (SQLite Database).
@@ -24,11 +26,22 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 * **Clear All Saved Crimes**, clears the SQLite database, removing **ALL** saved crimes.
 * **Delete Saved Crime**, clears the specific crime from SQLite database, only removing **ONE** saved crime.
 
+<table style="width:100%">
+  <tr>
+    <td>
+      <img src="app_nav_saved.jpg" width="250" title="A simple search request.">
+    </td>
+    <td>
+      <img src="app_nav_recent.jpg" width="250" title="A simple search request.">
+    </td>
+  </tr>
+  </table>
 
 ## Known Limitations
 * **Multiple Categories**, Due to limitations with the UK Police API you cannot query multiple categories at the same time, without significant load on the application running memory.
 * **Larger Date Ranges**, Due to the format of the data received from the UK Police API, date ranges have to be month specific. I plan to implement a multiple month query which will take longer to process, however, would allow output of multiple months. See Future Implementations for more info.
 * **Specific Radius**, To be implemented, see Future Implementations.
+* **10,000 Crime Limit**, Due to limitations with the UK Police API you cannot query more than 10,000 crimes, it will simply reject the request.
 
 
 ## Future Implementations
