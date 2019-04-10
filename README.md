@@ -12,7 +12,8 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 * **Query Locations**, the app allows you to enter a UK based location: "folkestone", "hythe" etc. Using the Google GEOCoding API it will find a best matched location.
 * **Query Month**, you can query a location for a single month of a certain year. Extended date ranges will be added soon, see Future Implementations for more information on this.
 * **Query Crime Categories**, if desired, you can query a specific crime category, or all categories at the same time.
-<img src="app_nav_search.jpg" width="250" title="A simple search request.">
+
+<img src="/images/app_nav_search.jpg" width="250" title="A simple search request.">
 
 ###### Specific Crime Features
 * **List/Map View**, toggle between a list or map representation of your crime query.
@@ -22,13 +23,13 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 <table style="width:100%">
   <tr>
     <td>
-      <img src="app_listview.jpg" width="250" title="A simple search request.">
+      <img src="/images/app_listview.jpg" width="250" title="A simple search request.">
     </td>
     <td>
-      <img src="app_mapview.jpg" width="250" title="A simple search request.">
+      <img src="/images/app_mapview.jpg" width="250" title="A simple search request.">
     </td>
         <td>
-      <img src="app_crimeview.jpg" width="250" title="A simple search request.">
+      <img src="/images/app_crimeview.jpg" width="250" title="A simple search request.">
     </td>
   </tr>
   </table>
@@ -43,10 +44,10 @@ My code implementation makes use of the MVC design pattern, Response Listeners f
 <table style="width:100%">
   <tr>
     <td>
-      <img src="app_nav_saved.jpg" width="250" title="A simple search request.">
+      <img src="/images/app_nav_saved.jpg" width="250" title="A simple search request.">
     </td>
     <td>
-      <img src="app_nav_recent.jpg" width="250" title="A simple search request.">
+      <img src="/images/app_nav_recent.jpg" width="250" title="A simple search request.">
     </td>
   </tr>
   </table>
